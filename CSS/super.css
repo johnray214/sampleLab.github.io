@@ -1,0 +1,298 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #37517e;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+#hidden {
+  visibility: hidden;
+}
+.header {
+  color: rgb(255, 255, 255);
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px auto;
+  align-items: center;
+}
+.header .logo {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 600;
+  font-size: 25px;
+}
+.header ul {
+  position: relative;
+  right: 100px;
+  display: flex;
+  list-style: none;
+  gap: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 500;
+  font-size: 15px;
+}
+.header ul a {
+  text-decoration: none;
+  color: white;
+}
+
+.box1 {
+  margin-top: 96px;
+  background-color: #37517e;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box1content h1{
+  color: rgb(3, 237, 190);
+  font-weight: 800;
+  font-size: 55px;
+}
+.box1content p{
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 500;
+}
+.imageanimation {
+  position: relative;
+  left: 200px;
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+@keyframes up-down {
+  0% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    transform: translateY(-20px);
+  }
+}
+.laboratories {
+  height: 12vh;
+  background-color: rgb(216, 216, 216);
+}
+.box2 {
+  color: white;
+  margin: 0;
+  padding: 0;
+  height: 80vh;
+  background-color: #37517e;
+}
+.dropdown-content {
+  color: rgb(0, 0, 0);
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content,
+#b {
+  color: black;
+}
+.dropdown:hover .dropdown-content {
+  color: black;
+  display: block;
+}
+#arrow-down {
+  position: relative;
+  left: 85px;
+  top: -20px;
+  cursor: pointer;
+}
+#home:hover {
+  color: #001a47;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+#about:hover {
+  color: #001a47;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+.laboratories {
+  background-color:rgb(22, 20, 24);
+  display: flex;
+  justify-content: center;
+}
+
+.labs {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+#l {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+#l:hover {
+  color: #ff7f50;
+  font-size: 28px;
+}
+.box2:nth-child(odd) {
+  background-color: rgb(22, 20, 24);
+}
+.lab1 {
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  height: 75vh;
+  width: 50%;
+}
+.title-lab {
+  color: white;
+}
+.vscode {
+  position: relative;
+  border-radius: 0.5rem;
+  width: 340px;
+  height: 330px;
+  object-fit: cover;
+  top: 16px;
+  left: 20px;
+}
+.card-for-vscode {
+  border-radius: 0.7rem;
+  width: 380px;
+  height: 500px;
+  border: 1px solid #ffffff22;
+  background-color: #282c34;
+  background: linear-gradient(
+    0deg,
+    rgba(40, 44, 52, 1) 0%,
+    rgba(17, 0, 32, 0.5) 100%
+  );
+  box-shadow: 0 7px 20px 5px #00000088;
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+}
+.card-for-vscode .comment {
+  align-self: center;
+  justify-self: center;
+  position: relative;
+  bottom: -65px;
+  right: 30px;
+  color: #a89ec9;
+}
+.card-for-google {
+  border-radius: 0.7rem;
+  width: 380px;
+  height: 500px;
+  border: 1px solid #ffffff22;
+  background-color: #282c34;
+  background: linear-gradient(
+    0deg,
+    rgba(40, 44, 52, 1) 0%,
+    rgba(17, 0, 32, 0.5) 100%
+  );
+  box-shadow: 0 7px 20px 5px #00000088;
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+}
+
+.card-for-google .comment1 {
+  align-self: center;
+  justify-self: center;
+  position: relative;
+  bottom: -65px;
+  right: 30px;
+  color: #a89ec9;
+}
+.lab2-card {
+  display: flex;
+  justify-content: center;
+  height: 75vh;
+  width: 50%;
+}
+.card-for-lab2 {
+  border-radius: 0.7rem;
+  width: 580px;
+  height: 500px;
+  background: rgba(107, 105, 234, 0.3);
+  -webkit-backdrop-filter: blur(28px);
+  backdrop-filter: blur(28px);
+  border: 1px solid rgba(107, 105, 234, 0.15);
+}
+.button-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  border: none;
+  padding: 12px 24px;
+  border-radius: 24px;
+  font-size: 10px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.btn + .btn {
+  margin-left: 30px;
+}
+
+.outline {
+  background: transparent;
+  color: rgba(0, 212, 255, 0.9);
+  border: 1px solid rgba(0, 212, 255, 0.6);
+  transition: all 0.3s ease;
+}
+
+.outline:hover {
+  transform: scale(1.125);
+  color: rgba(255, 255, 255, 0.9);
+  border-color: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease;
+}
+
+.card-for-lab3 {
+  width: 580px;
+  height: 500px;
+  border-radius: 10px;
+   border: 1px solid #ffffff22;
+  background-color: #282c34;
+  background: linear-gradient(
+    0deg,
+    rgba(40, 44, 52, 1) 0%,
+    rgba(17, 0, 32, 0.5) 100%
+  );
+  box-shadow: 0 7px 20px 5px #00000088;
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+}
+
+#btn-lab3 {
+  background: rgba(255, 179, 0, 0.9);
+  color: rgba(255, 255, 255, 0.95);
+  filter: drop-shadow(0);
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border-color: rgba(255, 179, 0, 0.9);
+}
+#btn-lab3:hover {
+  transform: scale(1.125);
+  border-color: rgba(255, 255, 255, 0.9);
+  filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.125));
+  transition: all 0.3s ease;
+}
